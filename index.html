@@ -9,6 +9,7 @@
       content="WASHMATE — giặt sấy online, giao nhận tận nơi. Sạch thơm mỗi ngày, chi phí trong tầm tay."
     />
     <title>WASHMATE — Giặt giũ nhẹ tênh</title>
+    <link rel="icon" type="image/x-icon" href="assets/washing-machine.svg" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -108,28 +109,134 @@
             <p>Trao đổi tình trạng đơn qua kênh liên hệ đã thống nhất.</p>
           </article>
         </div>
-        <div class="pricing-card">
-          <h3>Dịch vụ &amp; bảng giá</h3>
-          <p>
-            Bảng giá đang chờ nhóm xác minh chi phí giặt, giao nhận và thỏa
-            thuận với tiệm giặt đối tác.
-          </p>
-          <div class="price-grid">
-            <div>
-              <h4>Giặt sấy thường</h4>
-              <p>Đang chờ xác minh chính thức</p>
+        <div class="pricing-card" id="pricing">
+          <div class="pricing-header">
+            <h3>Dịch vụ &amp; bảng giá</h3>
+            <p>
+              Bảng giá dịch vụ giặt sấy minh bạch, chi tiết theo khối lượng và
+              chi phí giao nhận tận nơi.
+            </p>
+          </div>
+
+          <div class="pricing-list">
+            <div class="pricing-group">
+              <h4 class="pricing-group-title">A. Giá chính theo kg</h4>
+              <div class="pricing-table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th>Dịch vụ</th>
+                      <th>Giá (đ/kg)</th>
+                      <th>Đơn tối thiểu</th>
+                      <th>Thời gian</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="service-name">Giặt sấy tiêu chuẩn</td>
+                      <td class="price-highlight">18.500</td>
+                      <td>60.000đ</td>
+                      <td>24 giờ</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Giặt sấy Express</td>
+                      <td>24.000</td>
+                      <td>80.000đ</td>
+                      <td>8–12 giờ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div>
-              <h4>Giặt hấp / đồ đặc biệt</h4>
-              <p>Đang chờ xác minh chính thức</p>
+
+            <div class="pricing-group">
+              <h4 class="pricing-group-title">B. Dịch vụ bổ sung</h4>
+              <div class="pricing-table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th>Dịch vụ bổ sung</th>
+                      <th>Đơn vị tính</th>
+                      <th>Giá</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="service-name">Tẩy trắng / tẩy vết bẩn</td>
+                      <td>Theo kg</td>
+                      <td>+10.000đ/kg</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Giặt tay</td>
+                      <td>Theo kg</td>
+                      <td>+6.000đ/kg</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Giặt riêng đồ trắng</td>
+                      <td>Theo kg</td>
+                      <td>+4.500đ/kg</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Ủi đồ</td>
+                      <td>Theo món</td>
+                      <td>10.000đ/món</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Giặt chăn mỏng / ga giường</td>
+                      <td>Theo kg</td>
+                      <td>22.000đ/kg</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Giặt thú nhồi bông nhỏ</td>
+                      <td>Theo con</td>
+                      <td>45.000 – 65.000đ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div>
-              <h4>Giao nhận tận nơi</h4>
-              <p>Đang chờ xác minh chính thức</p>
+
+            <div class="pricing-group">
+              <h4 class="pricing-group-title">C. Chi phí nhận – giao</h4>
+              <div class="pricing-table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th>Phạm vi</th>
+                      <th>Phí 2 chiều</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="service-name">≤ 2 km (khu vực ưu tiên)</td>
+                      <td class="free-badge">Miễn phí</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">2 – 4 km</td>
+                      <td>15.000đ</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">4 – 6 km</td>
+                      <td>25.000đ</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Trên 6 km</td>
+                      <td>25.000đ + 5.000đ/km</td>
+                    </tr>
+                    <tr>
+                      <td class="service-name">Ngoài khung giờ</td>
+                      <td>+10.000 – 15.000đ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
+
           <p class="price-note">
-            Không sử dụng mức giá chưa được kiểm chứng trong bản chính thức.
+            * Bảng giá niêm yết rõ ràng. Đơn hàng dưới mức tối thiểu được tính
+            theo giá đơn tối thiểu quy định. Phí giao nhận áp dụng cho 2 chiều
+            nhận và trả đồ tận nơi.
           </p>
         </div>
       </section>
